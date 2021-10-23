@@ -25,7 +25,9 @@
     "test:ci": "jest --runInBand",
     "test:coverage": "jest --coverage",
     "compodoc": "./node_modules/.bin/compodoc -p tsconfig.json",
-    "analyze": "npm run build -- --stats-json && webpack-bundle-analyzer dist/aspnetcorespa/stats.json"
+    "analyze": "npm run build -- --stats-json && webpack-bundle-analyzer dist/aspnetcorespa/stats.json",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "@angular/animations": "10.0.6",
@@ -51,7 +53,8 @@
     "oidc-client": "1.10.1",
     "preboot": "7.0.0",
     "rxjs": "6.5.3",
-    "zone.js": "~0.10.3"
+    "zone.js": "~0.10.3",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1000.4",
@@ -83,5 +86,6 @@
       "environments/(.*)": "<rootDir>/src/environments/$1"
     }
   },
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }
