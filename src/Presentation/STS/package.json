@@ -3,9 +3,14 @@
     "name": "asp.net",
     "private": true,
     "devDependencies": {
+ snyk-upgrade-5019fc27640ab0e4151b63e171532fb2
+        "bootstrap": "4.4.1",
+        "jquery": "3.6.0",
+
 snyk-upgrade-d22c2aa0ae39cb603856d68aa77c20e5
         "bootstrap": "4.6.0",
         "jquery": "3.4.1",
+ master
         "jquery-validation": "1.19.1",
 
         "bootstrap": "4.5.3",
