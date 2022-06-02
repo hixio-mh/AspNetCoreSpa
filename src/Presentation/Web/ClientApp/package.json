@@ -27,6 +27,32 @@
     "analyze": "npm run build -- --stats-json && webpack-bundle-analyzer dist/aspnetcorespa/stats.json"
   },
   "dependencies": {
+ snyk-upgrade-a10c0abfcd802c43cda4040065fc509f
+    "@angular/animations": "10.0.6",
+    "@angular/common": "10.0.6",
+    "@angular/compiler": "10.0.6",
+    "@angular/compiler-cli": "10.0.6",
+    "@angular/core": "10.0.6",
+    "@angular/forms": "10.0.6",
+    "@angular/localize": "^10.2.3",
+    "@angular/platform-browser": "10.0.6",
+    "@angular/platform-browser-dynamic": "10.0.6",
+    "@angular/platform-server": "10.0.6",
+    "@angular/router": "10.0.6",
+    "@microsoft/signalr": "3.1.0",
+    "@microsoft/signalr-protocol-msgpack": "3.1.0",
+    "@ng-bootstrap/ng-bootstrap": "5.1.4",
+    "ag-grid-angular": "^22.1.1",
+    "ag-grid-community": "^22.1.1",
+    "aspnet-prerendering": "3.0.1",
+    "bootstrap": "4.4.1",
+    "date-fns": "2.8.1",
+    "lodash": "4.17.15",
+    "oidc-client": "1.10.1",
+    "preboot": "7.0.0",
+    "rxjs": "6.5.3",
+    "zone.js": "~0.10.3"
+
     "@angular/animations": "13.0.1",
     "@angular/common": "13.0.1",
     "@angular/compiler": "13.0.1",
@@ -48,6 +74,7 @@
     "oidc-client": "1.11.5",
     "rxjs": "7.4.0",
     "zone.js": "~0.11.4"
+ master
   },
   "devDependencies": {
 snyk-upgrade-b87443502ae48835ddf9063df9603b03
