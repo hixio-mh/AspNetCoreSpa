@@ -50,6 +50,41 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
+snyk-upgrade-b87443502ae48835ddf9063df9603b03
+    "@angular-devkit/build-angular": "~0.1000.4",
+    "@angular/cli": "10.0.4",
+    "@angular/language-service": "10.0.6",
+snyk-upgrade-bb5b4d16c5b4cfdcc80c5906c3040e56
+    "@angular/pwa": "0.1102.18",
+
+ snyk-upgrade-b24c5f88661598dd94cf4d8d16bb69db
+    "@angular/pwa": "0.1102.17",
+
+    "@angular/pwa": "0.1102.15",
+ master
+
+    "@angular/service-worker": "10.0.6",
+    "@compodoc/compodoc": "1.1.11",
+    "@types/jest": "^24.0.24",
+ snyk-upgrade-fbb6c491750cecb2801acbc57cce683e
+    "@types/node": "12.20.40",
+
+ snyk-upgrade-f55138744dc3e56ded778f34316d2324
+    "@types/node": "12.20.36",
+
+    "@types/node": "12.20.42",
+
+master
+
+    "codelyzer": "^5.2.1",
+    "jest": "^24.9.0",
+    "jest-preset-angular": "^8.0.0",
+    "protractor": "5.4.2",
+    "ts-node": "8.5.4",
+    "tslint": "5.20.1",
+    "typescript": "~3.9.7",
+    "webpack-bundle-analyzer": "3.6.0"
+
     "@angular-devkit/build-angular": "~13.0.2",
     "@angular/cli": "13.0.2",
     "@angular/language-service": "13.0.1",
@@ -66,6 +101,7 @@
     "tslint": "6.1.3",
     "typescript": "~4.4.4",
     "webpack-bundle-analyzer": "4.5.0"
+master
   },
   "jest": {
     "preset": "jest-preset-angular",
