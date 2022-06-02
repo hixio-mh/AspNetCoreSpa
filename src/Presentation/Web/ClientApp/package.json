@@ -58,7 +58,12 @@ snyk-upgrade-b87443502ae48835ddf9063df9603b03
     "@angular/service-worker": "10.0.6",
     "@compodoc/compodoc": "1.1.11",
     "@types/jest": "^24.0.24",
+ snyk-upgrade-f55138744dc3e56ded778f34316d2324
+    "@types/node": "12.20.36",
+
     "@types/node": "12.20.42",
+
+master
     "codelyzer": "^5.2.1",
     "jest": "^24.9.0",
     "jest-preset-angular": "^8.0.0",
