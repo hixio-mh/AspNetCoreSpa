@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Threading.Tasks;
 using AspNetCoreSpa.Infrastructure.Identity.Entities;
-using IdentityServer4.EntityFramework.Entities;
-using IdentityServer4.EntityFramework.Extensions;
-using IdentityServer4.EntityFramework.Interfaces;
-using IdentityServer4.EntityFramework.Options;
+using Duende.IdentityServer.EntityFramework.Entities;
+using Duende.IdentityServer.EntityFramework.Extensions;
+using Duende.IdentityServer.EntityFramework.Interfaces;
+using Duende.IdentityServer.EntityFramework.Options;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -15,7 +15,7 @@ namespace AspNetCoreSpa.Infrastructure.Identity
     public class IdentityServerDbContext :
         IdentityDbContext<ApplicationUser, ApplicationRole, Guid,
             ApplicationUserClaim, ApplicationUserRole, ApplicationUserLogin,
-            ApplicationRoleClaim, ApplicationUserToken>, IPersistedGrantDbContext, IConfigurationDbContext
+            ApplicationRoleClaim, ApplicationUserToken>, IPersistedGrantDbContext
     {
         private readonly IOptions<OperationalStoreOptions> _operationalStoreOptions;
 
@@ -33,7 +33,7 @@ namespace AspNetCoreSpa.Infrastructure.Identity
         public DbSet<Client> Clients { get; set; }
         public DbSet<IdentityResource> IdentityResources { get; set; }
         public DbSet<ApiResource> ApiResources { get; set; }
-        Task<int> IConfigurationDbContext.SaveChangesAsync() => base.SaveChangesAsync();
+        public DbSet<Key> Keys { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
