@@ -181,6 +181,7 @@ ClientBin/
 ~$*
 *~
 *.db
+*.db*
 *.dbmdl
 *.dbproj.schemaview
 *.pfx
@@ -232,3 +233,6 @@ _Pvt_Extensions/
 ModelManifest.xml
 
 .DS_Store
+
+**/.angular/cache
+**/.idea
