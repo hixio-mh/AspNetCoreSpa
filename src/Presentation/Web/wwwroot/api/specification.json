@@ -1,5 +1,5 @@
-﻿{
-  "x-generator": "NSwag v13.2.0.0 (NJsonSchema v10.1.2.0 (Newtonsoft.Json v12.0.0.0))",
+{
+  "x-generator": "NSwag v13.14.0.0 (NJsonSchema v10.5.2.0 (Newtonsoft.Json v13.0.0.0))",
   "openapi": "3.0.0",
   "info": {
     "title": "AspNetCoreSpa API",
@@ -378,10 +378,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/EmployeeLookupDto"
-                  }
+                  "$ref": "#/components/schemas/EmployeesListVm"
                 }
               }
             }
@@ -555,22 +552,22 @@
           }
         ],
         "responses": {
-          "404": {
-            "description": "",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ProblemDetails"
-                }
-              }
-            }
-          },
           "200": {
             "description": "",
             "content": {
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/ProductDetailVm"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
                 }
               }
             }
@@ -612,12 +609,13 @@
           "x-position": 1
         },
         "responses": {
-          "default": {
+          "201": {
             "description": "",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ProblemDetails"
+                  "type": "integer",
+                  "format": "int32"
                 }
               }
             }
@@ -632,13 +630,12 @@
               }
             }
           },
-          "201": {
+          "default": {
             "description": "",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "integer",
-                  "format": "int32"
+                  "$ref": "#/components/schemas/ProblemDetails"
                 }
               }
             }
@@ -884,7 +881,9 @@
       },
       "ProblemDetails": {
         "type": "object",
-        "additionalProperties": false,
+        "additionalProperties": {
+          "nullable": true
+        },
         "properties": {
           "type": {
             "type": "string",
@@ -909,7 +908,6 @@
           },
           "extensions": {
             "type": "object",
-            "nullable": true,
             "additionalProperties": {}
           }
         }
@@ -1112,6 +1110,19 @@
           "region": {
             "type": "string",
             "nullable": true
+          }
+        }
+      },
+      "EmployeesListVm": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "employees": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/EmployeeLookupDto"
+            }
           }
         }
       },
