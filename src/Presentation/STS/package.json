@@ -3,9 +3,28 @@
     "name": "asp.net",
     "private": true,
     "devDependencies": {
+ snyk-upgrade-5019fc27640ab0e4151b63e171532fb2
         "bootstrap": "4.4.1",
+        "jquery": "3.6.0",
+
+snyk-upgrade-d22c2aa0ae39cb603856d68aa77c20e5
+        "bootstrap": "4.6.0",
         "jquery": "3.4.1",
+ snyk-upgrade-7dd4f5ed2d557253af479300edad1bc9
+        "jquery-validation": "1.19.3",
+
+ master
         "jquery-validation": "1.19.1",
+ snyk-upgrade-89dbb19bbbb48536e5cd59a5fcde9af5
+        "jquery-validation-unobtrusive": "3.2.12"
+
+
+        "bootstrap": "4.5.3",
+        "jquery": "3.5.1",
+        "jquery-validation": "1.19.3",
+master
+
         "jquery-validation-unobtrusive": "3.2.11"
+ master
     }
 }
