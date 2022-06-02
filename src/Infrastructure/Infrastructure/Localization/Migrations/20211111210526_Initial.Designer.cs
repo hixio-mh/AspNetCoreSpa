@@ -6,17 +6,18 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
+#nullable disable
+
 namespace AspNetCoreSpa.Infrastructure.Localization.Migrations
 {
     [DbContext(typeof(LocalizationDbContext))]
-    [Migration("20191225170206_Initial")]
+    [Migration("20211111210526_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.0");
+            modelBuilder.HasAnnotation("ProductVersion", "6.0.0");
 
             modelBuilder.Entity("AspNetCoreSpa.Domain.Entities.Localization.Culture", b =>
                 {
@@ -59,6 +60,13 @@ namespace AspNetCoreSpa.Infrastructure.Localization.Migrations
                     b.HasOne("AspNetCoreSpa.Domain.Entities.Localization.Culture", "Culture")
                         .WithMany("Resources")
                         .HasForeignKey("CultureId");
+
+                    b.Navigation("Culture");
+                });
+
+            modelBuilder.Entity("AspNetCoreSpa.Domain.Entities.Localization.Culture", b =>
+                {
+                    b.Navigation("Resources");
                 });
 #pragma warning restore 612, 618
         }
