@@ -15,6 +15,9 @@ snyk-upgrade-d22c2aa0ae39cb603856d68aa77c20e5
 
  master
         "jquery-validation": "1.19.1",
+ snyk-upgrade-89dbb19bbbb48536e5cd59a5fcde9af5
+        "jquery-validation-unobtrusive": "3.2.12"
+
 
         "bootstrap": "4.5.3",
         "jquery": "3.5.1",
@@ -22,5 +25,6 @@ snyk-upgrade-d22c2aa0ae39cb603856d68aa77c20e5
 master
 
         "jquery-validation-unobtrusive": "3.2.11"
+ master
     }
 }
