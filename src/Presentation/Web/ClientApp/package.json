@@ -39,7 +39,7 @@
     "@angular/platform-browser-dynamic": "10.0.6",
     "@angular/platform-server": "10.0.6",
     "@angular/router": "10.0.6",
-    "@microsoft/signalr": "3.1.0",
+    "@microsoft/signalr": "3.1.10",
     "@microsoft/signalr-protocol-msgpack": "3.1.0",
     "@ng-bootstrap/ng-bootstrap": "5.1.4",
     "ag-grid-angular": "^22.1.1",
